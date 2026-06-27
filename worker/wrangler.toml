@@ -1,0 +1,6 @@
+name = "gongform-edge-tts"
+main = "edge-tts-proxy.ts"
+compatibility_date = "2024-12-01"
+
+# 무료 플랜 (Workers Free) — 별도 설정 불필요
+# 배포 후 https://gongform-edge-tts.<your-subdomain>.workers.dev 형식의 URL을 받음

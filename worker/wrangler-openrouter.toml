@@ -1,0 +1,18 @@
+name = "gongform-openrouter"
+main = "openrouter-proxy.ts"
+compatibility_date = "2024-12-01"
+
+# Firebase 프로젝트 ID — 인증 토큰 검증에 사용 (공개되어도 OK).
+# 본인 Firebase 콘솔의 프로젝트 ID로 교체하세요.
+[vars]
+FIREBASE_PROJECT_ID = "여기 projectId 입력"
+
+# 사용자별 분당 요청 한도용 KV 네임스페이스 (선택 — 없으면 rate limit 스킵).
+# 생성: wrangler kv:namespace create RATE_LIMIT
+# 그 다음 출력된 id를 아래에 붙여넣고 binding 유지.
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "your-kv-id"
+
+# 배포 후:
+# wrangler secret put OPENROUTER_API_KEY  → 프롬프트에 sk-or-... 키 붙여넣기

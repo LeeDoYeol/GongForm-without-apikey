@@ -1,0 +1,68 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.keystore
+
+# generated native folders
+/ios
+/android
+
+# Firebase / Google service config (앱별 비밀 설정)
+google-services.json
+GoogleService-Info.plist
+
+# EAS / Expo build
+.eas/
+
+# Cloudflare Worker (worker/)
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# Metro
+.metro-health-check*
+
+# debug / logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+logs/
+
+# 환경변수 / 비밀 (절대 커밋 금지) — 예시 파일만 허용
+.env
+.env.*
+!.env.example
+
+# typescript / build cache
+*.tsbuildinfo
+.cache/
+coverage/
+
+# editor / OS
+.idea/
+.DS_Store
+*.pem
+Thumbs.db
+
+# 예제 템플릿 잔재
+app-example
